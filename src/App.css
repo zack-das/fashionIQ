@@ -48,7 +48,6 @@ nav ul li:hover{
   display: flex;
   width: 240px;
   height: 30px;
-  background: black;
   margin-left: 100px;
   border-radius: 18px;
 }
@@ -79,6 +78,71 @@ nav ul li:hover{
   font-size: 200px;
 }
 
+.hamburger-container{
+  display: none;
+}
+/*Navbar media queries*/
+@media(max-width: 700px){
+.main-menu{
+  display: none;
+}
+.search-container{
+  display: none;
+}
+#searchBar{
+  display: none;
+}
+.hamburger-container{
+  display: flex;
+}
+.logo{
+  margin-left: 20px;
+}
+
+
+}
+
+@media(max-width: 1059px){
+  nav{
+    width: 100%;
+  }
+  .logo{
+  display: flex;
+  padding: 0 0 0 60px;
+}
+.logo a{
+   font-size: 22px;
+   text-decoration: none;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav ul li{
+  font-family: sans-serif;
+  font-size:  14px;
+  color: white;
+}
+
+.search-container{
+  display: flex;
+  width: 240px;
+  height: 30px;
+  background: black;
+  margin-left: 2px;
+  border-radius: 18px;
+}
+.userAccess{
+  display: flex;
+  margin: 0 0 0 20px;
+  padding: 0 20px 0 0;
+  gap: 20px;
+}
+
+}
 
 /*Home section styles*/
 .home-section{
