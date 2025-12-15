@@ -13,7 +13,7 @@ function Home() {
         </div>
       </section>
     </>
-  );p
+  );
 }
 
 export default Home;
