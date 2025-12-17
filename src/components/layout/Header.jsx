@@ -26,7 +26,7 @@ function Header(){
 			</div>
 			{/*Desktop nav*/}
 			<div className="main-menu">
-					<ul className="desktop-nav">
+				<ul className="desktop-nav">
 					<li>Women</li>
 					<li>Men</li>
 					<li>Babies & Kids</li>
