@@ -9,7 +9,7 @@ nav{
   z-index: 1000;
   position: fixed;
   width: 100%;
-  background: grey;
+  background: #fffb0021;
   height: 80px;
   align-items: center;
   gap: 6px;
@@ -162,9 +162,10 @@ nav ul li{
 /*Home section styles*/
 .home-section{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding-top: 80px;
-  width: 100%;  
+  width: 100%;
+  height: 100%;  
   min-height: 600px;
   background: url("./assets/images/homeone.jpg");
   background-size: cover;
@@ -175,15 +176,17 @@ nav ul li{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  
+  padding:12px 10px 12px  10px;
   background-color: hsla(0, 0%, 0%, 0.15);
+ 
 }
 .hero{
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 500px;
-  margin: 50px 0 0 20px;
+  width: 100%;
+  height: 200px;
+
   /*background: white;*/
 }
 .heroH{
@@ -191,7 +194,7 @@ nav ul li{
   width: 160px;
   padding: 6px;
   border-radius: 5px;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 .hero h2{
   font-size: 12px;
@@ -199,7 +202,7 @@ nav ul li{
   text-align: center;
   color: white;
 }
-.hero h1{
+/* .hero h1{
   font-family: 'Montserrat';
   font-size: 5rem;
   margin-bottom: 2rem;
@@ -209,6 +212,59 @@ nav ul li{
   font-size: 18px;
   line-height: 1.5;
   color: white;
+  text-align: right;
+  text-shadow:2px 2px blue;
+  position: absolute;
+  left: 860px;
+} */
+.herotag{
+  display: flex;
+ 
+  justify-content: space-between;
+  flex-direction: column;
+}
+.herotag h1{
+  font-family: 'Montserrat';
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.herotag p{
+ text-align: right;
+  font-family: "Avenir Next", "Avenir", "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+  text-align: right;
+
+}
+.herotag p span{
+  font-family: 'inter',sans-serif;
+  color: #39ff14;
+}
+.herotag .s{
+ color: #ff00d4;
+ background-color: white;
+}
+.herotag p .t{
+display: flex;
+width: 200px;
+color: rgb(255, 0, 128);
+padding: 20px;
+}
+.styled{
+  border: 1px solid black;
+}
+.herotag p .y{
+color: rgb(0, 17, 255);
+background-color: whitesmoke;
+}
+.herotag p .l{
+color: orangered;
+background-color: black;
+}
+.herotag p .e{
+color: maroon;
+background-color: white;
 }
 .home-cta{
   display: flex;
@@ -259,6 +315,7 @@ nav ul li{
 
 .hero-cta:hover {
   border: 2px solid transparent;
+  cursor: pointer;
   color: white;
   background: #d99439;
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
